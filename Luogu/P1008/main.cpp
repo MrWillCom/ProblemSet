@@ -19,9 +19,9 @@ int main()
     string combined_string = to_string(a) + to_string(b) + to_string(c);
 
     // avoid illegal characters
-    for (int i = 0; i < combined_string.size(); i++)
+    for (char i : combined_string)
     {
-      if (acceptable_numbers.find(combined_string[i]) == -1)
+      if (acceptable_numbers.find(i) == -1)
       {
         acceptable = false;
       }
